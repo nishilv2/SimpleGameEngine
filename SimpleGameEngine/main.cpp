@@ -159,6 +159,7 @@ HRESULT object_init()
 	{
 		return E_FAIL;
 	}
+
 	fontposition.top = 9;
 	fontposition.left = 0;
 	fontposition.right = SCREEN_WIDTH;
@@ -191,6 +192,7 @@ void direct3d_cleanup()
 {
 	SAFE_RELEASE(d3ddevice);
 	SAFE_RELEASE(pfont);
+	
 }
 
 float getFps()
